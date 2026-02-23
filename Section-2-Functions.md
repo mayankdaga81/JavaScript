@@ -40,6 +40,10 @@ const factorial = function fact(n) {
 factorial(5); // 120
 // fact(5);    // ✗ Error (name only available inside)
 ```
+### Notes
+
+- You can not call the same function inside that function in case of Function Declaration or Function Expression.
+- You must use either Named function expression or Arrow functions to call the same function inside the own function.
 
 ### When to Use
 
@@ -181,7 +185,7 @@ greet("John", "Hi"); // "Hi, John"
 function multiply(a, b = a * 2) {
   return a * b;
 }
-multiply(5); // 25 (5 * 10)
+multiply(5); // 50 (5 * 10)
 
 // Default can be function call
 function getDefault() {
@@ -206,7 +210,7 @@ sum(1, 2, 3, 4, 5); // 15
 
 // Rest must be last parameter
 function log(level, ...messages) {
-  console.log(`[${level}]`, ...messages);
+  console.log(`[${level}]`, ...messages); // '[ERROR]', 'Failed', 'to', 'connect' 
 }
 log("ERROR", "Failed", "to", "connect");
 ```
@@ -225,7 +229,7 @@ const combined = [...arr1, ...arr2]; // [1,2,3,4,5,6]
 const numbers = [1, 2, 3];
 Math.max(...numbers); // 3 (instead of Math.max(numbers))
 
-// Copying arrays (shallow copy)
+// Copying arrays (shallow copy) - If the original array contains nested objects or arrays, the shallow copy copies the memory addresses (references) of those inner elements, not the elements themselves.
 const original = [1, 2, 3];
 const copy = [...original];
 
@@ -249,7 +253,7 @@ function greet({ name, age }) {
 }
 greet({ name: "John", age: 30 }); // "John is 30 years old"
 
-// With defaults
+// With defaults - (You must add = {} at the end, this is part of Syntax)
 function greet({ name = "Guest", age = 0 } = {}) {
   return `${name} is ${age} years old`;
 }
@@ -634,4 +638,3 @@ function fn([a, b]) {}
 
 ---
 
-**Next**: Ready for Section 3 (Objects)? Just ask!
