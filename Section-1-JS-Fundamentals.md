@@ -401,4 +401,3 @@ Number.isNaN(value)
 
 ---
 
-**Next**: Ready for Section 2 (Functions)? Just ask!
