@@ -1,5 +1,4 @@
 # JavaScript Revision Guide - Complete Index
-
 ## Essential JavaScript Topics for TypeScript
 
 ### **Section 1: Fundamentals**
