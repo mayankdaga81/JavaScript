@@ -16,7 +16,7 @@ function greet(name) {
 
 ### Function Expression
 
-Not hoisted - must be defined before use.
+Not hoisted - must be defined before use - Function expressions and arrow functions are created at the point in the code where the assignment occurs during the execution phase, meaning they are not "fully" hoisted. They are treated like variables (var, let, or const), and only the variable declaration part gets hoisted..
 
 ```javascript
 // sayHi("John");  // ✗ Error (not hoisted)
