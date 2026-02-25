@@ -90,25 +90,3 @@
 3. Local Storage & Session Storage
 4. Fetch API
 
----
-
-## How to Use This Guide
-
-**Request notes section by section:**
-
-- "Give me Section 1 notes"
-- "Give me Section 2 notes"
-- etc.
-
-**Or request specific topics:**
-
-- "Explain closures"
-- "Give me notes on Promises"
-
-**Priority for TypeScript learners:**
-
-- Sections 1-7 are **essential**
-- Section 8 is **highly recommended**
-- Section 9 & 10 are **good to know**
-
----
